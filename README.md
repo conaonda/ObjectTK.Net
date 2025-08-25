@@ -1,3 +1,9 @@
+What is ObjectTK.Net?
+======
+
+ObjectTK.Net is a .Net version of ObjectTK developed based on .NetFramework.
+Unfortunately, ObjectTK development will (probably) cease in 2022, so I had to fork it to use ObjectTK on a modern .Net basis.
+
 What is ObjectTK?
 ======
 
