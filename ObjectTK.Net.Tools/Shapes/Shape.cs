@@ -8,7 +8,7 @@
 //
 
 using ObjectTK.Buffers;
-using OpenTK;
+using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
 namespace ObjectTK.Tools.Shapes

@@ -2,7 +2,7 @@
 using ObjectTK.Shaders.Sources;
 using ObjectTK.Shaders.Variables;
 using ObjectTK.Textures;
-using OpenTK;
+using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
 namespace Examples.Shaders

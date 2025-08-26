@@ -7,13 +7,16 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using OpenTK;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace ObjectTK.Tools.Cameras
 {
     public class FreeLookAlignedBehavior
         : FreeLookBehavior
     {
+        public FreeLookAlignedBehavior(MouseState mouseState, KeyboardState keyboardState) : base(mouseState, keyboardState) { }
+
         public Vector3 AlignmentPoint;
 
         public override void UpdateFrame(CameraState state, float step)

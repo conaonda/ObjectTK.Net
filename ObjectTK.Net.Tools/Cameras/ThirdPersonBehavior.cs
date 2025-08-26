@@ -7,14 +7,17 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using OpenTK;
 using OpenTK.Input;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace ObjectTK.Tools.Cameras
 {
     public class ThirdPersonBehavior
         : CameraBehavior
     {
+        public ThirdPersonBehavior(MouseState mouseState, KeyboardState keyboardState) : base(mouseState, keyboardState) { }
+
         public Vector3 Origin;
 
         protected void UpdateDistance(CameraState state, float scale)
@@ -30,16 +33,15 @@ namespace ObjectTK.Tools.Cameras
         }
 
         public override void MouseMove(CameraState state, Vector2 delta)
-        {
-            var mouse = Mouse.GetState();
-            if (mouse.IsButtonDown(MouseButton.Left))
+        {   
+            if (MouseState.IsButtonDown(MouseButton.Left))
             {
                 // rotate look direction with mouse
                 HandleFreeLook(state, delta);
                 // recalculate the position
                 UpdateDistance(state, 0);
             }
-            if (mouse.IsButtonDown(MouseButton.Right))
+            if (MouseState.IsButtonDown(MouseButton.Right))
             {
                 UpdateDistance(state, delta.Y);
             }

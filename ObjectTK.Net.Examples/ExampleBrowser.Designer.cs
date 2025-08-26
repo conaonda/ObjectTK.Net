@@ -28,45 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeViewExamples = new System.Windows.Forms.TreeView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            treeViewExamples = new TreeView();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // treeViewExamples
             // 
-            this.treeViewExamples.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeViewExamples.Location = new System.Drawing.Point(12, 25);
-            this.treeViewExamples.Name = "treeViewExamples";
-            this.treeViewExamples.Size = new System.Drawing.Size(344, 297);
-            this.treeViewExamples.TabIndex = 1;
-            this.treeViewExamples.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.TreeViewExamples_NodeMouseDoubleClick);
-            this.treeViewExamples.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TreeViewExamples_KeyDown);
+            treeViewExamples.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            treeViewExamples.Location = new Point(14, 29);
+            treeViewExamples.Margin = new Padding(4, 3, 4, 3);
+            treeViewExamples.Name = "treeViewExamples";
+            treeViewExamples.Size = new Size(401, 342);
+            treeViewExamples.TabIndex = 1;
+            treeViewExamples.NodeMouseDoubleClick += TreeViewExamples_NodeMouseDoubleClick;
+            treeViewExamples.KeyDown += TreeViewExamples_KeyDown;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Example projects: Double-click to run.";
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 7);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(213, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Example projects: Double-click to run.";
             // 
             // ExampleBrowser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 334);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.treeViewExamples);
-            this.KeyPreview = true;
-            this.Name = "ExampleBrowser";
-            this.Text = "ObjectTK example projects";
-            this.Load += new System.EventHandler(this.ExampleBrowser_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ExampleBrowser_KeyDown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(429, 385);
+            Controls.Add(label1);
+            Controls.Add(treeViewExamples);
+            KeyPreview = true;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "ExampleBrowser";
+            Text = "ObjectTK example projects";
+            Load += ExampleBrowser_Load;
+            KeyDown += ExampleBrowser_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

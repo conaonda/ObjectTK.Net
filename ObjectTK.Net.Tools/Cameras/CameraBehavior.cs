@@ -7,12 +7,23 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using OpenTK;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace ObjectTK.Tools.Cameras
 {
     public abstract class CameraBehavior
     {
+
+        protected CameraBehavior(MouseState mouseState, KeyboardState keyboardState)
+        {
+            this.MouseState = mouseState;
+            this.KeyboardState = keyboardState;
+        }
+        public MouseState MouseState { get; }
+
+        public KeyboardState KeyboardState { get; }
+
         public virtual void Initialize(CameraState state) { }
         public virtual void UpdateFrame(CameraState state, float step) { }
         public virtual void MouseMove(CameraState state, Vector2 delta) { }
@@ -26,8 +37,9 @@ namespace ObjectTK.Tools.Cameras
             var leftRight = Vector3.Cross(state.Up, state.LookAt);
             var forward = Vector3.Cross(leftRight, state.Up);
             // rotate look at direction
-            var rot = Matrix4.CreateFromAxisAngle(state.Up, -delta.X) * Matrix4.CreateFromAxisAngle(leftRight, delta.Y);
-            Vector3.Transform(ref state.LookAt, ref rot, out state.LookAt);
+            //var rot = Matrix4.CreateFromAxisAngle(state.Up, -delta.X) * Matrix4.CreateFromAxisAngle(leftRight, delta.Y);
+            var rot = Quaternion.FromAxisAngle(state.Up, -delta.X) * Quaternion.FromAxisAngle(leftRight, delta.Y);
+            Vector3.Transform(state.LookAt, rot, out state.LookAt);
             // renormalize to prevent summing up of floating point errors
             state.LookAt.Normalize();
             // flip up vector when pitched more than +/-90� from the forward direction

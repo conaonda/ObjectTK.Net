@@ -1,14 +1,21 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
+
 using Examples.Shaders;
+
 using ObjectTK.Buffers;
 using ObjectTK.Shaders;
 using ObjectTK.Textures;
 using ObjectTK.Tools.Shapes;
-using OpenTK;
+
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Input;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
+
+using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
 namespace Examples.BasicExamples
 {
@@ -32,43 +39,42 @@ namespace Examples.BasicExamples
         private int _rotateIndex = _defaultRotateIndex;
         private readonly Stopwatch _stopwatch = new Stopwatch();
 
-        public RotatingTexturedCubeExample()
-        {
-            Load += OnLoad;
-            RenderFrame += OnRenderFrame;
-            KeyDown += OnKeyDown;
-        }
+        public RotatingTexturedCubeExample() { }
 
-        private void OnKeyDown(object sender, KeyboardKeyEventArgs e)
+        protected override void OnKeyDown(KeyboardKeyEventArgs e)
         {
+            base.OnKeyDown(e);
+
             switch (e.Key)
             {
-                case Key.R:
+                case Keys.R:
                     _objectView = _baseView = Matrix4.Identity;
                     _rotateIndex = _defaultRotateIndex;
                     _stopwatch.Restart();
                     break;
 
-                case Key.Space:
+                case Keys.Space:
                     _baseView = _objectView;
                     _rotateIndex = (_rotateIndex + 1) % _rotateVectors.Length;
                     _stopwatch.Restart();
                     break;
 
-                case Key.Number0:
-                case Key.Number1:
-                case Key.Number2:
-                case Key.Number3:
-                case Key.Number4:
+                case Keys.KeyPad0:
+                case Keys.KeyPad1:
+                case Keys.KeyPad2:
+                case Keys.KeyPad3:
+                case Keys.KeyPad4:
                     _baseView = _objectView;
-                    _rotateIndex = (e.Key - Key.Number0) % _rotateVectors.Length;
+                    _rotateIndex = (e.Key - Keys.KeyPad0) % _rotateVectors.Length;
                     _stopwatch.Restart();
                     break;
             }
         }
 
-        private void OnLoad(object sender, EventArgs e)
+        protected override void OnLoad()
         {
+            base.OnLoad();
+
             // load texture from file
             using (var bitmap = new Bitmap("Data/Textures/crate.png"))
             {
@@ -106,10 +112,11 @@ namespace Examples.BasicExamples
             _stopwatch.Restart();
         }
 
-        private void OnRenderFrame(object sender, OpenTK.FrameEventArgs e)
+        protected override void OnRenderFrame(FrameEventArgs args)
         {
+            base.OnRenderFrame(args);
             // set up viewport
-            GL.Viewport(0, 0, Width, Height);
+            //GL.Viewport(0, 0, Width, Height);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             SetupPerspective();
 

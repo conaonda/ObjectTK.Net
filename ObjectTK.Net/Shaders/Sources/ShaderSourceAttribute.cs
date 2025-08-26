@@ -50,7 +50,7 @@ namespace ObjectTK.Shaders.Sources
         /// <returns>A mapping of ShaderType and source path.</returns>
         public static List<ShaderSourceAttribute> GetShaderSources(Type programType)
         {
-            return programType.GetCustomAttributes<ShaderSourceAttribute>(true).ToList();
+            return programType.CustomAttributes<ShaderSourceAttribute>(true).ToList();
         }
     }
 }

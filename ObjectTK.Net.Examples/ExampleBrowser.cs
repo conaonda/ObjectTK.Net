@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using ObjectTK;
-using OpenTK;
+using OpenTK.Windowing.Desktop;
 
 namespace Examples
 {
@@ -33,7 +33,7 @@ namespace Examples
                     ? existingNodes[0]
                     : treeViewExamples.Nodes.Add(type.Namespace, type.Namespace);
                 // add node for this example and get the caption from the attribute
-                var captionAttribute = type.GetCustomAttributes<ExampleProjectAttribute>(false).FirstOrDefault();
+                var captionAttribute = type.CustomAttributes<ExampleProjectAttribute>(false).FirstOrDefault();
                 node.Nodes.Add(type.Name, captionAttribute == null ? type.Name : captionAttribute.Caption);
                 // remember example type
                 _examples.Add(type.Name, type);

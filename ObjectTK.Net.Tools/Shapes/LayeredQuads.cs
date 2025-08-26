@@ -7,7 +7,7 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using OpenTK;
+using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
 namespace ObjectTK.Tools.Shapes

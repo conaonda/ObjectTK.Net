@@ -11,6 +11,8 @@ using System;
 using OpenTK;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
 
 namespace ObjectTK.Tools
 {
@@ -28,8 +30,8 @@ namespace ObjectTK.Tools
         /// <summary>
         /// Initializes a new instance of the DerpWindow class.
         /// </summary>
-        protected DerpWindow(int width, int height, GraphicsMode mode, string title)
-            : base(width, height, mode, title)
+        protected DerpWindow(GameWindowSettings gameWindowSettings, NativeWindowSettings nativeWindowSettings)
+            : base(gameWindowSettings, nativeWindowSettings )
         {
             // log some OpenGL information
             Logger?.Info("OpenGL context information:");
@@ -41,22 +43,39 @@ namespace ObjectTK.Tools
             GL.GetInteger(GetPName.NumExtensions, out numExtensions);
             Logger?.DebugFormat("Number available extensions: {0}", numExtensions);
             for (var i = 0; i < numExtensions; i++) Logger?.DebugFormat("{0}: {1}", i, GL.GetString(StringNameIndexed.Extensions, i));
-            Logger?.InfoFormat("Initializing game window: {0}", title);
-            // set up GameWindow events
-            Resize += OnResize;
-            UpdateFrame += OnUpdateFrame;
+            Logger?.InfoFormat("Initializing game window: {0}", nativeWindowSettings.Title);
             // set up frame timer
             FrameTimer = new FrameTimer();
         }
 
-        private void OnResize(object sender, EventArgs eventArgs)
+        protected override void OnFramebufferResize(FramebufferResizeEventArgs e)
         {
-            Logger?.InfoFormat("Window resized to: {0}x{1}", Width, Height);
+            base.OnFramebufferResize(e);
+
+            GL.Viewport(0, 0, e.Width, e.Height);
+            if (e.Width != this.ClientSize.X || e.Height!= this.ClientSize.Y)
+            {
+                throw new InvalidOperationException();
+            }
         }
 
-        private void OnUpdateFrame(object sender, FrameEventArgs e)
+        protected override void OnUpdateFrame(FrameEventArgs args)
         {
+            base.OnUpdateFrame(args);
+
             FrameTimer.Time();
+        }
+
+        protected override void OnResize(ResizeEventArgs e)
+        {
+            base.OnResize(e);
+
+            Logger?.InfoFormat("Window resized to: {0}x{1}", e.Width, e.Height);
+            
+            if (e.Width != this.ClientSize.X || e.Height != this.ClientSize.Y)
+            {
+                throw new InvalidOperationException();
+            }
         }
     }
 }

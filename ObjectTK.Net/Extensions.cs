@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using OpenTK;
+using OpenTK.Mathematics;
 
 namespace ObjectTK
 {
@@ -61,7 +61,7 @@ namespace ObjectTK
         /// <param name="type">The member on which to look for custom attributes.</param>
         /// <param name="inherit">Specifies whether to search this member's inheritance chain to find the attributes.</param>
         /// <returns>An IEnumerable of custom attributes applied to this member.</returns>
-        public static IEnumerable<T> GetCustomAttributes<T>(this MemberInfo type, bool inherit)
+        public static IEnumerable<T> CustomAttributes<T>(this MemberInfo type, bool inherit)
         {
             return type.GetCustomAttributes(typeof(T), inherit).Cast<T>();
         }

@@ -12,10 +12,14 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
+
 using ObjectTK.Exceptions;
 using ObjectTK.Shaders;
 using ObjectTK.Shaders.Sources;
+
 using OpenTK;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
 
 namespace ObjectTK.Compiler
 {
@@ -55,8 +59,28 @@ namespace ObjectTK.Compiler
 
         public static void Main(string[] args)
         {
+            GameWindowSettings gwSettings = new GameWindowSettings()
+            {
+                UpdateFrequency = 250,
+            };
+
+            NativeWindowSettings nwSettings = new NativeWindowSettings()
+            {
+                API = ContextAPI.OpenGL,
+                APIVersion = new Version(3, 3),
+                AutoLoadBindings = true,
+                Flags = ContextFlags.Debug | ContextFlags.ForwardCompatible,
+                IsEventDriven = false,
+                Profile = ContextProfile.Core,
+                ClientSize = (800, 600),
+                StartFocused = true,
+                StartVisible = true,
+                WindowBorder = WindowBorder.Resizable,
+                WindowState = WindowState.Normal,
+            };
+
             // create a hidden GameWindow to initialize an OpenGL context
-            using (new GameWindow())
+            using (new GameWindow(gwSettings, nwSettings))
             {
                 // iterate over given arguments
                 foreach (var path in args)

@@ -7,7 +7,7 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using OpenTK;
+using OpenTK.Mathematics;
 
 namespace ObjectTK.Tools.Cameras
 {
