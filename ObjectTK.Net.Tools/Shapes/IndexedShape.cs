@@ -7,10 +7,10 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using ObjectTK.Buffers;
+using ObjectTK.Net.Buffers;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Tools.Shapes
+namespace ObjectTK.Net.Tools.Shapes
 {
     public abstract class IndexedShape
         : Shape

@@ -1,22 +1,18 @@
-﻿using System;
-using System.Drawing;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
-using Examples.Shaders;
+using ObjectTK.Net.Examples.Shaders;
 
-using ObjectTK.Buffers;
-using ObjectTK.Shaders;
-using ObjectTK.Textures;
+using ObjectTK.Net.Buffers;
+using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Textures;
 
 using OpenTK.Graphics.OpenGL;
-using OpenTK.Input;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
 
 using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
-namespace Examples.BasicExamples
+namespace ObjectTK.Net.Examples.BasicExamples
 {
     [ExampleProject("Custom buffer memory layout and simple texturing")]
     public class BufferLayoutTexturingExample

@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Drawing;
 
-using Examples.Shaders;
+using ObjectTK.Net.Examples.Shaders;
 
-using ObjectTK.Buffers;
-using ObjectTK.Shaders;
-using ObjectTK.Textures;
-using ObjectTK.Tools.Shapes;
+using ObjectTK.Net.Buffers;
+using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Textures;
+using ObjectTK.Net.Tools.Shapes;
 
 using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.Common;
 
-namespace Examples.AdvancedExamples
+namespace ObjectTK.Net.Examples.AdvancedExamples
 {
     [ExampleProject("Render to texture")]
     public class RenderToTextureExample

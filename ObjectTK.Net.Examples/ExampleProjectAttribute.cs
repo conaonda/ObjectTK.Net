@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Examples
+namespace ObjectTK.Net.Examples
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class ExampleProjectAttribute

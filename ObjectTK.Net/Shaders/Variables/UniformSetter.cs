@@ -11,13 +11,13 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using ObjectTK.Exceptions;
+using ObjectTK.Net.Exceptions;
 using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
 using Half = OpenTK.Mathematics.Half;
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     internal abstract class UniformSetter
     {

@@ -9,7 +9,7 @@
 
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Sources
+namespace ObjectTK.Net.Shaders.Sources
 {
     /// <summary>
     /// Specifies the source of a fragment shader.

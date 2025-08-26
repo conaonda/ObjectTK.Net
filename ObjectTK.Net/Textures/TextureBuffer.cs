@@ -8,10 +8,10 @@
 //
 
 using System;
-using ObjectTK.Buffers;
+using ObjectTK.Net.Buffers;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Textures
+namespace ObjectTK.Net.Textures
 {
     /// <summary>
     /// Represents a buffer texture.<br/>

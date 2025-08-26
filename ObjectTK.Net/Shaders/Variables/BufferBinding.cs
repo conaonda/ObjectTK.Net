@@ -8,10 +8,10 @@
 //
 
 using System;
-using ObjectTK.Buffers;
+using ObjectTK.Net.Buffers;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     /// <summary>
     /// Represents a shader buffer binding point identified by its resource index.

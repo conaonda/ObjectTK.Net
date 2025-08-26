@@ -7,10 +7,10 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using ObjectTK.Textures;
+using ObjectTK.Net.Textures;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     /// <summary>
     /// Represents a typed texture uniform. Allows only textures of the given type to be bound.

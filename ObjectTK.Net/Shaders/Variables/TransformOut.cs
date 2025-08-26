@@ -7,7 +7,7 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     /// <summary>
     /// Represents a transform feedback output varying.

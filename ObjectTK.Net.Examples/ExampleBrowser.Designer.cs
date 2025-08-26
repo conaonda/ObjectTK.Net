@@ -1,4 +1,4 @@
-﻿namespace Examples
+﻿namespace ObjectTK.Net.Examples
 {
     partial class ExampleBrowser
     {

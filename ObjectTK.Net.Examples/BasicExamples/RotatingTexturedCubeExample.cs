@@ -1,23 +1,19 @@
-﻿using System;
-using System.Diagnostics;
-using System.Drawing;
+﻿using System.Diagnostics;
 
-using Examples.Shaders;
+using ObjectTK.Net.Examples.Shaders;
 
-using ObjectTK.Buffers;
-using ObjectTK.Shaders;
-using ObjectTK.Textures;
-using ObjectTK.Tools.Shapes;
+using ObjectTK.Net.Buffers;
+using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Textures;
+using ObjectTK.Net.Tools.Shapes;
 
 using OpenTK.Graphics.OpenGL;
-using OpenTK.Input;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
 
 using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
-namespace Examples.BasicExamples
+namespace ObjectTK.Net.Examples.BasicExamples
 {
     [ExampleProject("Rotating textured cube rendering")]
     public class RotatingTexturedCubeExample

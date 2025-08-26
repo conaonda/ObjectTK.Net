@@ -1,19 +1,14 @@
-﻿using System;
-using System.Drawing;
-
-using Examples.Shaders;
-
-using ObjectTK.Buffers;
-using ObjectTK.Shaders;
-using ObjectTK.Textures;
-using ObjectTK.Tools.Shapes;
+﻿using ObjectTK.Net.Buffers;
+using ObjectTK.Net.Examples.Shaders;
+using ObjectTK.Net.Textures;
+using ObjectTK.Net.Tools.Shapes;
+using ObjectTK.Net.Shaders;
 
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
 
-namespace Examples.BasicExamples
+namespace ObjectTK.Net.Examples.BasicExamples
 {
     [ExampleProject("Skybox rendering with cube map texture")]
     public class SkyboxExample

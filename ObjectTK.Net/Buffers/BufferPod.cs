@@ -10,7 +10,7 @@
 using System;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Buffers
+namespace ObjectTK.Net.Buffers
 {
     /// <summary>
     /// Represents two buffer objects which are bundled together to simplify ping-ponging.

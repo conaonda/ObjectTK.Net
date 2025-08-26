@@ -9,7 +9,7 @@
 
 using System.Diagnostics;
 
-namespace ObjectTK.Tools
+namespace ObjectTK.Net.Tools
 {
     /// <summary>
     /// Handles frame timing and fps calculation.

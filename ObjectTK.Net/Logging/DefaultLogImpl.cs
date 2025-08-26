@@ -11,7 +11,7 @@ using System;
 using log4net;
 using log4net.Core;
 
-namespace ObjectTK.Logging
+namespace ObjectTK.Net.Logging
 {
     public class DefaultLogImpl : IObjectTKLogger
     {

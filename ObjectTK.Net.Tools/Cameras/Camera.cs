@@ -13,7 +13,7 @@ using OpenTK.Input;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Desktop;
 
-namespace ObjectTK.Tools.Cameras
+namespace ObjectTK.Net.Tools.Cameras
 {
     public class Camera
     {

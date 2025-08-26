@@ -11,7 +11,7 @@ using System;
 using System.IO;
 using log4net;
 
-namespace ObjectTK.Logging
+namespace ObjectTK.Net.Logging
 {
     public static class LogFactory
     {

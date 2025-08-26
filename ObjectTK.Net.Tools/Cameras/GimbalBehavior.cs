@@ -11,7 +11,7 @@ using OpenTK.Input;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 
-namespace ObjectTK.Tools.Cameras
+namespace ObjectTK.Net.Tools.Cameras
 {
     /// <summary>
     /// TODO: Does not yet work like it should.

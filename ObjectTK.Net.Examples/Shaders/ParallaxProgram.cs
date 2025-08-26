@@ -1,11 +1,11 @@
-﻿using ObjectTK.Shaders;
-using ObjectTK.Shaders.Sources;
-using ObjectTK.Shaders.Variables;
-using ObjectTK.Textures;
+﻿using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Shaders.Sources;
+using ObjectTK.Net.Shaders.Variables;
+using ObjectTK.Net.Textures;
 using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
-namespace Examples.Shaders
+namespace ObjectTK.Net.Examples.Shaders
 {
     [VertexShaderSource("Parallax.Vertex")]
     [FragmentShaderSource("Parallax.Fragment")]

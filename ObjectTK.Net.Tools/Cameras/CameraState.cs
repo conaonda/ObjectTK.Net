@@ -9,7 +9,7 @@
 
 using OpenTK.Mathematics;
 
-namespace ObjectTK.Tools.Cameras
+namespace ObjectTK.Net.Tools.Cameras
 {
     /// <summary>
     /// Represents the state of a camera.<br/>

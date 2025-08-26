@@ -11,7 +11,7 @@ using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 using System.Linq;
 
-namespace ObjectTK.Tools.Shapes
+namespace ObjectTK.Net.Tools.Shapes
 {
     public class TexturedCube
         : TexturedShape

@@ -14,7 +14,7 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
 
-namespace ObjectTK.Tools.Cameras
+namespace ObjectTK.Net.Tools.Cameras
 {
     public class FreeLookBehavior
         : CameraBehavior

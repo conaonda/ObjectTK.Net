@@ -13,7 +13,7 @@ using System.Linq;
 using System.Reflection;
 using OpenTK.Mathematics;
 
-namespace ObjectTK
+namespace ObjectTK.Net
 {
     /// <summary>
     /// Contains extension methods.

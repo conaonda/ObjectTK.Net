@@ -1,21 +1,17 @@
-﻿using System;
-using System.Drawing;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
-using Examples.Shaders;
+using ObjectTK.Net.Examples.Shaders;
 
-using ObjectTK.Buffers;
-using ObjectTK.Shaders;
+using ObjectTK.Net.Buffers;
+using ObjectTK.Net.Shaders;
 
 using OpenTK.Graphics.OpenGL;
-using OpenTK.Input;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
 
 using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
-namespace Examples.AdvancedExamples
+namespace ObjectTK.Net.Examples.AdvancedExamples
 {
     [ExampleProject("Transform feedback with gravity simulation")]
     public class FeedbackGravityExample

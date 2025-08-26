@@ -11,12 +11,10 @@
 
 // TODO: Find app that can build compressed dds cubemaps and verify that the import code works.
 
-using System;
 using System.Diagnostics;
-using System.IO;
 using OpenTK.Graphics.OpenGL;
 
-namespace Examples.AdvancedExamples
+namespace ObjectTK.Net.Examples.AdvancedExamples
 {
     /// <summary> 
     /// Expects the presence of a valid OpenGL Context and Texture Compression Extensions (GL 1.5) and Cube Maps (GL 1.3).

@@ -8,11 +8,11 @@
 //
 
 using System;
-using ObjectTK.Exceptions;
-using ObjectTK.Textures;
+using ObjectTK.Net.Exceptions;
+using ObjectTK.Net.Textures;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Buffers
+namespace ObjectTK.Net.Buffers
 {
     /// <summary>
     /// Represents a framebuffer object.

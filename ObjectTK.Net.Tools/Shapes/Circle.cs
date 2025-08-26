@@ -11,7 +11,7 @@ using System;
 using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Tools.Shapes
+namespace ObjectTK.Net.Tools.Shapes
 {
     public class Circle
         : Shape

@@ -9,7 +9,7 @@
 
 using OpenTK.Mathematics;
 
-namespace ObjectTK
+namespace ObjectTK.Net
 {
     /// <summary>
     /// Provides mathematical constants and functions with float precision.

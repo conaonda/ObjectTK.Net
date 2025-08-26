@@ -10,7 +10,7 @@
 using OpenTK.Mathematics;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 
-namespace ObjectTK.Tools.Cameras
+namespace ObjectTK.Net.Tools.Cameras
 {
     public class FreeLookAlignedBehavior
         : FreeLookBehavior

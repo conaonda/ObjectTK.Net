@@ -14,7 +14,7 @@ using OpenTK.Graphics.OpenGL;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 
-namespace ObjectTK.Tools
+namespace ObjectTK.Net.Tools
 {
     /// <summary>
     /// Provides basic functionality to an OpenTK GameWindow such as camera controls,

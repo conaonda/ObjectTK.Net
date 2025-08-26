@@ -8,11 +8,11 @@
 //
 
 using System.Linq;
-using ObjectTK.Exceptions;
-using ObjectTK.Shaders.Variables;
+using ObjectTK.Net.Exceptions;
+using ObjectTK.Net.Shaders.Variables;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders
+namespace ObjectTK.Net.Shaders
 {
     /// <summary>
     /// Represents a program object which utilizes transform feedback.

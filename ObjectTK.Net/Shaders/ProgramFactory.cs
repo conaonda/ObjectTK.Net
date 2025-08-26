@@ -12,10 +12,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using ObjectTK.Exceptions;
-using ObjectTK.Shaders.Sources;
+using ObjectTK.Net.Exceptions;
+using ObjectTK.Net.Shaders.Sources;
 
-namespace ObjectTK.Shaders
+namespace ObjectTK.Net.Shaders
 {
     /// <summary>
     /// Contains methods to automatically initialize program objects.

@@ -9,7 +9,7 @@
 
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     /// <summary>
     /// Represents a uniform buffer object (UBO) binding.

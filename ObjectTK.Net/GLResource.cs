@@ -9,9 +9,9 @@
 
 using System;
 using System.Reflection;
-using ObjectTK.Exceptions;
+using ObjectTK.Net.Exceptions;
 
-namespace ObjectTK
+namespace ObjectTK.Net
 {
     /// <summary>
     /// Represents an OpenGL resource.<br/>

@@ -11,7 +11,7 @@ using System;
 using System.Runtime.InteropServices;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Buffers
+namespace ObjectTK.Net.Buffers
 {
     /// <summary>
     /// Represents a buffer object.

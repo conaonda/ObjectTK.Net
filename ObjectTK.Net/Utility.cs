@@ -7,10 +7,10 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using ObjectTK.Exceptions;
+using ObjectTK.Net.Exceptions;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK
+namespace ObjectTK.Net
 {
     internal static class Utility
     {

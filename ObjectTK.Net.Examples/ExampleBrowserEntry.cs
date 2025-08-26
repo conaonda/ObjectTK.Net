@@ -1,8 +1,6 @@
-﻿using System;
-using System.Windows.Forms;
-using log4net.Config;
+﻿using log4net.Config;
 
-namespace Examples
+namespace ObjectTK.Net.Examples
 {
     public static class ExampleBrowserEntry
     {
@@ -10,7 +8,7 @@ namespace Examples
         public static void Main()
         {
             // initialize log4net via app.config if available
-            if (ObjectTK.Logging.LogFactory.IsAvailable)
+            if (Logging.LogFactory.IsAvailable)
                 ConfigureLogging();
 
             // show example browser

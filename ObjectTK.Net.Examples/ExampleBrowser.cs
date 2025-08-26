@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Windows.Forms;
-using ObjectTK;
+﻿using System.Reflection;
 using OpenTK.Windowing.Desktop;
 
-namespace Examples
+namespace ObjectTK.Net.Examples
 {
-    public partial class ExampleBrowser
-        : Form
+    public partial class ExampleBrowser : Form
     {
         private Dictionary<string, Type> _examples;
 

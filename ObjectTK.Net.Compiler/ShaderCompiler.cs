@@ -7,21 +7,17 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using System;
-using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-using ObjectTK.Exceptions;
-using ObjectTK.Shaders;
-using ObjectTK.Shaders.Sources;
+using ObjectTK.Net.Exceptions;
+using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Shaders.Sources;
 
-using OpenTK;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 
-namespace ObjectTK.Compiler
+namespace ObjectTK.Net.Compiler
 {
     /// <summary>
     /// Compiles all shader programs contained in assemblies given per command line arguments and outputs errors in a MSBuild and Visual Studio friendly way.<br/>

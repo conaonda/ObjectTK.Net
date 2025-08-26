@@ -9,10 +9,10 @@
 
 using System;
 using System.Linq;
-using ObjectTK.Shaders.Sources;
+using ObjectTK.Net.Shaders.Sources;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders
+namespace ObjectTK.Net.Shaders
 {
     /// <summary>
     /// Represents a program object which contains compute shaders.

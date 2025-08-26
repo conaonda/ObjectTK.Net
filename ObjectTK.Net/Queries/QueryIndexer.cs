@@ -8,10 +8,10 @@
 //
 
 using System.Collections.Generic;
-using ObjectTK.Exceptions;
+using ObjectTK.Net.Exceptions;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Queries
+namespace ObjectTK.Net.Queries
 {
     /// <summary>
     /// Base class for <see cref="QueryMapping{T}"/>.<br/>

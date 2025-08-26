@@ -10,7 +10,7 @@
 using System;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Variables
+namespace ObjectTK.Net.Shaders.Variables
 {
     /// <summary>
     /// Defines default values when binding buffers to the attributed <see cref="VertexAttrib"/>.

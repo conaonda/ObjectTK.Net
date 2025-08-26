@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders.Sources
+namespace ObjectTK.Net.Shaders.Sources
 {
     /// <summary>
     /// Specifies a source file which contains a single shader of predefined type.

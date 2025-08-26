@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Textures
+namespace ObjectTK.Net.Textures
 {
     internal class BitmapFormat
     {

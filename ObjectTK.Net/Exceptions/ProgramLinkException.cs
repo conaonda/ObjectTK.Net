@@ -9,7 +9,7 @@
 
 using System;
 
-namespace ObjectTK.Exceptions
+namespace ObjectTK.Net.Exceptions
 {
     /// <summary>
     /// The exception that is thrown when a program link error occurs.

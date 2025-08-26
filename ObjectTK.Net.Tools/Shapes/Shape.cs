@@ -7,11 +7,11 @@
 // of the MIT license. See the LICENSE file for details.
 //
 
-using ObjectTK.Buffers;
+using ObjectTK.Net.Buffers;
 using OpenTK.Mathematics;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Tools.Shapes
+namespace ObjectTK.Net.Tools.Shapes
 {
     /// <summary>
     /// TODO: needs a total refactoring

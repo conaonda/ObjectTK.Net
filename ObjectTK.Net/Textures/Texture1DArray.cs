@@ -9,7 +9,7 @@
 
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Textures
+namespace ObjectTK.Net.Textures
 {
     /// <summary>
     /// Represents a 1D texture array.<br/>

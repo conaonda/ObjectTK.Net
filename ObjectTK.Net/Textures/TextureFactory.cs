@@ -11,7 +11,7 @@ using System;
 using System.Linq;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Textures
+namespace ObjectTK.Net.Textures
 {
     /// <summary>
     /// Provides methods for creating texture objects in ways not covered by constructors.

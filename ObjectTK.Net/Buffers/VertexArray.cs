@@ -8,11 +8,11 @@
 //
 
 using System;
-using ObjectTK.Exceptions;
-using ObjectTK.Shaders.Variables;
+using ObjectTK.Net.Exceptions;
+using ObjectTK.Net.Shaders.Variables;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Buffers
+namespace ObjectTK.Net.Buffers
 {
     /// <summary>
     /// Represents a vertex array object.<br/>

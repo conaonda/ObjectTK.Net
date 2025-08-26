@@ -2,9 +2,9 @@
 using System.Runtime;
 
 using ObjectTK;
-using ObjectTK.Shaders;
-using ObjectTK.Tools;
-using ObjectTK.Tools.Cameras;
+using ObjectTK.Net.Shaders;
+using ObjectTK.Net.Tools;
+using ObjectTK.Net.Tools.Cameras;
 
 using OpenTK.Graphics;
 using OpenTK.Input;
@@ -14,7 +14,7 @@ using OpenTK.Windowing.Desktop;
 
 using Keys = OpenTK.Windowing.GraphicsLibraryFramework.Keys;
 
-namespace Examples
+namespace ObjectTK.Net.Examples
 {
     /// <summary>
     /// Provides common functionality for the examples.

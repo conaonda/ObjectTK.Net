@@ -9,7 +9,7 @@
 
 using System;
 
-namespace ObjectTK
+namespace ObjectTK.Net
 {
     /// <summary>
     /// Represents an OpenGL handle.<br/>

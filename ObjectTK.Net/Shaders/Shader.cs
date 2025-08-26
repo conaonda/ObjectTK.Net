@@ -9,10 +9,10 @@
 
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using ObjectTK.Exceptions;
+using ObjectTK.Net.Exceptions;
 using OpenTK.Graphics.OpenGL;
 
-namespace ObjectTK.Shaders
+namespace ObjectTK.Net.Shaders
 {
     /// <summary>
     /// Represents a shader object.

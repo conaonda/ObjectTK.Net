@@ -13,7 +13,7 @@ using System.Drawing.Imaging;
 using OpenTK.Graphics.OpenGL;
 using PixelFormat = OpenTK.Graphics.OpenGL.PixelFormat;
 
-namespace ObjectTK.Textures
+namespace ObjectTK.Net.Textures
 {
     /// <summary>
     /// Contains extension methods for texture types.

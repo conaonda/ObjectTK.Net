@@ -8,7 +8,7 @@
 
 using OpenTK.Graphics.OpenGL;
 
-namespace Examples.AdvancedExamples
+namespace ObjectTK.Net.Examples.AdvancedExamples
 {
 
     /// <summary>The parameters in this class have only effect on the following Texture loads.</summary>
