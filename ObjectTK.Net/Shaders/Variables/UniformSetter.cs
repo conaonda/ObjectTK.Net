@@ -65,6 +65,7 @@ namespace ObjectTK.Net.Shaders.Variables
                 new Map<Vector4h>((_, vector) => GL.Uniform4(_, vector.X, vector.Y, vector.Z, vector.W)),
                 new Map<Matrix2>((_, matrix) => GL.UniformMatrix2(_, false, ref matrix)),
                 new Map<Matrix3>((_, matrix) => GL.UniformMatrix3(_, false, ref matrix)),
+                new Map<Matrix3d>((_, matrix) => GL.UniformMatrix3(_, false, ref matrix)),
                 new Map<Matrix4>((_, matrix) => GL.UniformMatrix4(_, false, ref matrix)),
                 new Map<Matrix2x3>((_, matrix) => GL.UniformMatrix2x3(_, false, ref matrix)),
                 new Map<Matrix2x4>((_, matrix) => GL.UniformMatrix2x4(_, false, ref matrix)),
